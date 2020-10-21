@@ -1,4 +1,9 @@
 import React, {useState} from 'react';
+import menu from '../img/menu.svg';
+import logo from '../img/shopping-bag.svg';
+import cart from '../img/cart.svg';
+
+
 
 export const Header = () => {
     const [menuShow, setMenuShow] = useState(false)
@@ -23,17 +28,17 @@ export const Header = () => {
         <>
         <header>
             <div className ='menu' onClick={()=> setMenuShow(!menuShow)}>
-                <img src='../img/menu.svg' alt='menu'/>
+                <img src={menu} alt='menu'/>
                 <p>MENÚ</p>
             </div>
 
             <div className ='logo'>
-            <img src='../img/shopping-bag.svg' alt='menu'/>
+            <img src={logo} alt='my shop home'/>
             <p>MYSHOP</p>
             </div>
 
             <div className='cart'>
-            <img src='../img/cart.svg' alt='menu'/>
+            <img src={cart} alt='carrito de compras'/>
             <p>CARRITO</p>
 
 
